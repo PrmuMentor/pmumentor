@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+#mainNav{
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainNav #logoDiv{
+    font-size: 20px;
+    color: #7CAEFF;
+}
+#mainNav #authDiv{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mainNav #authDiv #login{
+    color: #7CAEFF;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+#mainNav #authDiv #login:hover {
+    color: #89a7d9;
+    transform: scale(1.05);
+}
+#mainNav #authDiv #signup{
+    background-color: #7CAEFF;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+#mainNav #authDiv #signup:hover {
+    transform: scale(1.1);
+}
+
+/* footer */
+footer{
+    margin: 2rem;
+    padding: 2rem;
+    margin-bottom: 0;
+    border-top: 1px #6767675d solid;
+}
+footer #footerContent{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+footer #footerContent #socialList{
+
+}
+footer #footerContent #socialList p{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+}
+footer #footerContent #socialList div#links{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+footer #footerContent #socialList div#links a{
+
+}
+footer #footerContent #socialList div#links a img{
+    width: 24px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+footer #footerContent #socialList div#links a img:hover{
+    width: 28px;
+}
+footer #footerContent #navgationList{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+}
+footer #footerContent #navgationList .listOfLinks{
+
+}
+footer #footerContent #navgationList .listOfLinks h4{
+    padding-bottom: 0.5rem;
+}
+footer #footerContent #navgationList .listOfLinks ul{
+    list-style: none;
+}
+footer #footerContent #navgationList .listOfLinks ul li{
+    line-height: 1.5;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+footer #footerContent #navgationList .listOfLinks ul li:hover {
+    color: #89a7d9;
+}
+footer #copyrights{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer #copyrights p{
+    text-align: center;
+}
+
+/* home */
+
+header{
+    padding: 0 3rem;
+}
+header #mainContent{
+    max-width: 500px;
+    padding-bottom: 3rem;
+}
+header #mainContent h1{
+    padding: 0.5rem 0;
+}
+header #mainContent p{
+    padding-bottom: 2rem;
+    color: #676767;
+}
+header #mainContent a{
+    background-color: #7CAEFF;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+header #mainContent a:hover {
+    background-color: #4987f2;
+}
+header #imageDiv{
+    width: 100%;
+    min-height: 550px;
+    background-image: url(header.jpeg);
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: center;
+}
+
+@media (max-width: 800px) {
+    header #imageDiv {
+        min-height: 400px;
+        background-size: cover;
+    }
+    footer #footerContent #navgationList {
+        width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    footer #footerContent {
+        flex-wrap: wrap;
+    }
+}
+
