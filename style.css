@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* nav */
@@ -13,6 +14,8 @@
 }
 #mainNav #logoDiv{
     font-size: 20px;
+}
+#mainNav #logoDiv a{
     color: #7CAEFF;
 }
 #mainNav #authDiv{
@@ -165,3 +168,75 @@ header #imageDiv{
     }
 }
 
+
+/* login & signup*/
+
+.outerContainerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginDiv{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid #7CAEFF;
+    border-radius: 30px;
+    background: #7CAEFF;
+    background: linear-gradient(12deg, rgba(124, 174, 255, 0.16) 0%, rgba(214, 214, 214, 0.1) 40%);
+}
+.loginDiv h2{
+    padding: 1rem 0;
+    font-size: 20px;
+    font-weight: 200;
+}
+form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 340px;
+}
+form label{
+    font-size: 18px;
+}
+form input{ 
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #7CAEFF;
+    padding: 0 40px 0 20px;
+    margin-bottom: 10px;
+}
+form input::placeholder {
+    color: #6767678c;
+}
+form input:focus {
+    outline: none;
+    border: 2px solid #7CAEFF;
+}
+form button[type="submit"]{
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: #7CAEFF;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+    form {
+        width: 280px;
+    }
+}

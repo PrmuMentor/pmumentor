@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body>
     <nav id="mainNav">
-        <div id="logoDiv">
-            <p>Pmu Mentor</p>
-        </div>
+        <div id="logoDiv"><a href="index.html">Pmu Mentor</a></div>
         <div id="authDiv">
-            <a id="login">Login</a>
-            <a id="signup">Sign Up</a>
+            <a id="login" href="login.html">Login</a>
+            <a id="signup" href="signup.html">Sign Up</a>
         </div>
     </nav>
 
-    <div>
-        <h2>Login</h2>
-
-        <form>
-            <label for="email">Email</label>
-            <input type="email" placeholder="enter your email" id="email">
-
-            <label for="password">Password</label>
-            <input type="password" placeholder="enter your password" id="password">
-
-            <button type="submit">submit</button>
-        </form>
+    <div class="outerContainerDiv">
+        <div class="loginDiv">
+            <h2>Login</h2>
+        
+            <form>
+                <label for="email">Email</label>
+                <input type="email" placeholder="enter your email" id="email">
+        
+                <label for="password">Password</label>
+                <input type="password" placeholder="enter your password" id="password">
+        
+                <button type="submit">submit</button>
+            </form>
+        </div>
     </div>
+    
+
+
+    <footer>
+        <div id="footerContent">
+            <div id="socialList">
+                <p>Pmu Mentor</p>
+                <div id="links">
+                    <a><img src="facebook.png"></a>
+                    <a><img src="linkedin.png"></a>
+                    <a><img src="youtube.png"></a>
+                    <a><img src="insta.png"></a>
+                </div>
+            </div>
+            <div id="navgationList">
+                <div class="listOfLinks">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li>Our Story</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="listOfLinks">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Contact form</li>
+                        <li>Contact info</li>
+                    </ul>
+                </div>
+                <div class="listOfLinks">
+                    <h4>Blog</h4>
+                </div>
+            </div>
+        </div>
+        <div id="copyrights">
+            <p>Copyright © 2025 PMU mentor. All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
